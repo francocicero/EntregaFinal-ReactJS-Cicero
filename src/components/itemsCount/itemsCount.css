@@ -1,0 +1,12 @@
+.contador {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 1rem;
+    justify-content: center;
+}
+
+.cont {
+    width: 50px;
+}

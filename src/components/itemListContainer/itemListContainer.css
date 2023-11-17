@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@500&family=Rubik+Vinyl&display=swap');
+
+.title {
+    max-width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+    font-family: 'Rubik Vinyl', cursive;
+}
+
+.lista_grupo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

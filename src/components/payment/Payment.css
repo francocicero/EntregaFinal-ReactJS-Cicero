@@ -1,0 +1,97 @@
+.gral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shipping {
+    max-width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .shipping-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .shipping-form input,
+  .shipping-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .shipping-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shipping-form button:hover {
+    background-color: #0056b3;
+  }
+
+·payment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.payment_center{
+    margin-top: 5rem;
+    width: 350px;
+    
+    
+}
+
+.payment_{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.payment_ h1{
+    margin: 1rem;
+}
+
+.payment_ h1 p{
+    margin: 1rem;
+}
+
+.payment_ button{
+    margin: 1rem;
+}
+
+.payment_ button {
+    background-color: rgb(241, 241, 240);
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: 800;
+    width: 300px;
+    color: black;
+}
+
+
+.payment_ button:hover {
+    color: rgb(90, 222, 86);
+    background: rgb(8, 8, 8);
+}

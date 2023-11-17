@@ -1,0 +1,39 @@
+/*Banner*/
+.banner {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo__banner {
+    max-width: 100%;
+    width: 1100px;
+    height: 500px;
+    opacity: 90%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .logo__banner {
+
+        height: 400px;
+
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .logo__banner {
+
+        height: 300px;
+
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .logo__banner {
+
+        height: 250px;
+
+    }
+}
