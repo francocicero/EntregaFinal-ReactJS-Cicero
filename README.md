@@ -1,95 +1,40 @@
-# EntregaFinal-Cicero-React
-
-## # Ecommerce React curso
-
-Este proyecto es un ecommerce orientado al comercio de zapatillas. 
-Por lo que la estética de la pagina es sencilla y minimalista, es dinamica y facil de usar.
-Se puede interactuar con la vista de categorias, individual de cada productos y a su ves la eleccion del producto por talle y cantidad del producto.
-Al finalizar en carrito podes simular una compra con mercado pago usando una api de simulacion (en forma local)
-
-## Tech
-
-Dillinger uses a number of open source projects to work properly:
-
-- [React] - Librería de Javascript
-- [Node.js] - Entorno de ejecución para JavaScript
-- [FireBase] - es una solución que permite guardar nuestros productos en forma sencilla dinamica y costo de bajo recursos.
-- [Express] - Librería de Node utilizada en la construccion de la API
-- [Axios] - utilizada para facilitar una acción en particular en el código JavaScript: hacer llamadas a URL o líneas HTTP
-- [Cors] - Nos ayuda a que no nos de algun error en la seguridad entre navegadores
-- [MercadoPago] - para integrar la api de prueba de mercadoPago para poder simular una compra usando CheckOut Pro. "ejemplo que use para integrar https://www.mercadopago.com.ar/developers/es/docs/checkout-pro/integrate-checkout-pro#editor_20"
-
-
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
-
-## Instalacion 
-
-Si desea correr este proyecto, simplemente clone este repositorio y ejecute npm install luego usas o creas tu credenciales de prueba
-de mercadoPago Devolpers (las credenciales son privadas).
-Si no tiene cuenta crea una cuenta aqui: https://www.mercadopago.com.ar/developers/es
-Despues creada la cuenta acceda al menu tus integraciones para crear tu aplicación para las crendenciales...
-
-instalar las dependencias
-
-```sh
-npm i
-npm i axios // capaz que te la pida o no
-```
-crea o usas tu credenciales de prueba
-de mercadoPago Devolpers (las credenciales son privadas).
-Si no tiene cuenta crea una cuenta aqui: https://www.mercadopago.com.ar/developers/es
-Despues creada la cuenta acceda al menu tus integraciones para crear tu crendenciales...
-
-Aqui un ejemplo donde tiene que insertar las crendenciales de tu mercado pago:
-
-```sh
-En carpeta Payment en payment.jsx hay que insertar tu plubic key... 
-
-  const [preferenceId, setPreferenceId] = useState(null);
-  initMercadoPago("Agregar Public key MP");
-```
-```sh
-Y en la carpeta service entrar mercadopago y en el archivo server agregar la credencial de prueba de mercadopago...
-
-    mercadopago.configure({
-      access_token: "Inserta token de Prueba MercadoPago",
-    });
-```
-
-```sh
-Antes de inicar la app con npm run dev
-Hay que posicionarse en el archivo server.js abrir la terminal desde esa direccion y poner node server.js asi levanta el puerto 8080
-para mercado pago
-y por ultimo desloguearte de la cuenta de mercado pago porque no puedes hacerte pago a vos mismo.
-```
-
-```sh
-Usa tarjetas de prueba de métodos de pago locales y simula diferentes transacciones, sin necesidad de usar una tarjeta real.
-
-Mastercard
-5031 7557 3453 0604
-123
-11/25
-
-Visa
-4509 9535 6623 3704
-123
-11/25
-
-American Express
-3711 803032 57522
-1234
-11/25
-
-```
-
-
-
-
-
-
-
-
-
-
+|<h1>Proyecto</h1>|
+|:----|
+|<hr>|
+|<p>Este es un proyecto de ecommerce que se utiliza para el curso de React de CoderHouse. La aplicación permite ver una lista de productos de indumentaria, poder filtrar la busqueda de los mismos , sumarlos a un carrito de compras y realizar la compras en línea. Los productos y las órdenes de compra se almacenan en Firebase.</p>|
+|<hr>|
+|<h2>Tecnologia Utilizadas </h2>|
+|<ul>|
+|    <li>Vite</li>|
+|    <li>React</li>|
+|    <li>React Router</li>|
+|    <li>Firebase</li>|
+|</ul>|
+|<h2>Funcionalidades</h2>|
+|<hr>|
+|<ul>|
+|    <li>Ver una lista de productos disponibles</li>|
+|    <li>Agregar productos al carrito de compras</li>|
+|    <li>Ver el carrito de compra</li>|
+|    <li>Realizar una orden de compra</li>|
+|</ul>|
+|<h2>Instalacion</h2>|
+|<hr>|
+|<h3>Para instalar y ejecutar la aplicación en tu máquina local, sigue los siguientes pasos:</h3>|
+|<ol>|
+|    <li>Clona el repositorio a tu máquina local.</li>|
+|    <li>Abre una terminal en el directorio del proyecto.</li>|
+|    <li>Ejecuta el comando npm install para instalar las dependencias.</li>|
+|    <li>Ejecuta el comando npm run dev para iniciar la aplicación.</li>|
+|    <li>Abre tu navegador y navega a http://localhost:5174/ para ver la aplicación en acción.</li>|
+|</ol>|
+|<h2>Configuracion firebase</h2>|
+|<hr>|
+|<h3>Para utilizar Firebase en esta aplicación, debes seguir los siguientes pasos:</h3>|
+|<ol>|
+|    <li>Crea una cuenta en Firebase y crea un nuevo proyecto.</li>|
+|    <li>En la sección "Authentication" de Firebase, habilita el proveedor de 3. autenticación de correo electrónico y contraseña.</li>|
+|    <li>En la sección "Firestore" de Firebase, crea una nueva base de datos y configura las reglas de seguridad para permitir lectura/escritura solamente a usuarios autenticados.</li>|
+|    <li>En la sección "Project settings" de Firebase, haz clic en "Add app" y sigue las instrucciones para agregar una nueva aplicación web</li>|
+|    <li>Copia las credenciales de Firebase y configura las variables de entorno en el archivo .env de tu proyecto.</li>|
+|</ol>|
